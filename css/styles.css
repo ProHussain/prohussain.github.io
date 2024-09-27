@@ -1064,3 +1064,18 @@
     grid-template-columns: 1fr; /* Single column on small screens */
   }
 }
+
+.header-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff3366; /* Adjust the color as needed */
+  margin: 0; /* Remove any default margin */
+}
+
+.footer-quote {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  color: #777; /* Adjust the color as needed */
+  padding: 20px; /* Adjust padding for spacing */
+}
