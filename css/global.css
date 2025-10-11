@@ -8,7 +8,7 @@
 
 - Letter spacing: 0.5px / 0.75px / 2px
 
-- colors: #000 / #222 / #555 / #fff / #ecf0f3 / #E4E6EA / #d9dee2 / #FF124F
+- colors: #000 / #222 / #555 / #fff / #ecf0f3 / #E4E6EA / #d9dee2 / #1B5E20 (text) / #3DDC84 (bg)
 
 - SHADOWS : 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff
 
@@ -79,7 +79,7 @@ a {
 
 .social-icon {
   font-size: 2rem;
-  color: #ff124f;
+  color: #1B5E20;
 }
 
 .social-img {
@@ -93,7 +93,7 @@ a {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
-  color: #ff124f;
+  color: #1B5E20;
 }
 
 .heading-primary {
@@ -105,7 +105,7 @@ a {
 }
 
 .heading-primary span {
-  color: #ff124f;
+  color: #1B5E20;
 }
 
 .heading-primary span:last-of-type {
@@ -153,7 +153,7 @@ a {
 .btn i {
   position: relative;
   font-size: 1.6rem;
-  color: #ff124f;
+  color: #1B5E20;
 }
 
 .btn span {
@@ -189,7 +189,7 @@ a {
 
 .to-up-arrow {
   font-size: 2.4rem;
-  color: #ff124f;
+  color: #1B5E20;
   transition: all 0.4s;
 }
 

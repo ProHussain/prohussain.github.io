@@ -37,7 +37,7 @@
   border-radius: 9px;
   box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  color: #ff124f;
+  color: #1B5E20;
   transition: transform 0.4s, background 0.4s, color 0.4s;
 }
 
@@ -113,7 +113,7 @@
 .sidebar--close-icon,
 .sidebar--open-icon {
   font-size: 2rem;
-  color: #ff124f;
+  color: #1B5E20;
 }
 
 .sidebar--desc {
@@ -215,7 +215,7 @@
 .feat-icon,
 .feat-arrow {
   font-size: 3.6rem;
-  color: #ff124f;
+  color: #1B5E20;
   transition: color 0.4s;
 }
 
@@ -285,7 +285,7 @@
   font-weight: 400;
   font-size: 1.4rem;
   letter-spacing: 0.5px;
-  color: #ff124f;
+  color: #1B5E20;
 }
 
 .project-stats {
@@ -299,6 +299,13 @@
 .project-link {
   color: #222;
   transition: color 0.4s;
+}
+
+.project-desc {
+  font-size: 1.3rem;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 1.2rem;
 }
 
 /* End Portfolio Styles */
@@ -397,7 +404,7 @@
   left: -1.6rem;
   width: 1.6rem;
   height: 1.6rem;
-  background-color: #ff124f;
+  background-color: #3DDC84;
   border-radius: 50%;
   box-shadow: 0 0 0 4px #ecf0f3;
   transform: translate(-50%, -50%);
@@ -442,7 +449,7 @@
 }
 
 .timeline-content ul li::marker {
-  color: #ff124f; /* Custom bullet color */
+  color: #1B5E20; /* Custom bullet color */
 }
 /* Skills Section */
 .skills-grid {
@@ -477,7 +484,7 @@
 .skill-progress span {
   display: block;
   height: 10px;
-  background: #ff3366; /* Skill bar color */
+  background: #3DDC84; /* Android green skill bar */
   border-radius: 8px;
 }
 
@@ -519,7 +526,7 @@
 .skill-progress span {
   display: block;
   height: 10px;
-  background: #ff3366; /* Skill bar color */
+  background: #3DDC84; /* Android green skill bar */
   border-radius: 8px;
 }
 
@@ -554,7 +561,7 @@
   display: block;
   height: 100%;
   border-radius: 11px;
-  background: linear-gradient(145deg, #fff 0%, #ff124f 100%);
+  background: linear-gradient(145deg, #fff 0%, #3DDC84 100%);
   border: 2px solid #d9dee2;
 }
 
@@ -641,7 +648,7 @@
 }
 
 .testimonial--client-say--evaluation-star {
-  color: #ff124f;
+  color: #1B5E20;
   font-size: 1.2rem;
 }
 
@@ -661,7 +668,7 @@
 }
 
 .testimonial--bullet.active {
-  background-color: #ff124f;
+  background-color: #3DDC84;
 }
 
 /* End Testimonial Styles */
@@ -758,7 +765,7 @@
   padding: 1.2rem 1.6rem;
   border-radius: 9px;
   box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
-  background: #ff124f;
+  background: #3DDC84;
   font-size: 1.6rem;
   font-weight: 500;
   color: #fff;
@@ -790,7 +797,7 @@
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   font-size: 1.6rem;
   font-weight: 500;
-  color: #ff124f;
+  color: #1B5E20;
 }
 
 .pricing-plan--desc {
@@ -815,7 +822,7 @@
 
 .pricing-plan-feat i {
   margin-right: 0.4rem;
-  color: #ff124f;
+  color: #1B5E20;
 }
 
 /* End Pricing Styles */
@@ -866,7 +873,7 @@
   font-weight: 400;
   font-size: 1.4rem;
   letter-spacing: 0.5px;
-  color: #ff124f;
+  color: #1B5E20;
 }
 
 .blog-stats {
@@ -987,7 +994,7 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #ff124f !important;
+  border-color: #3DDC84 !important;
 }
 
 .contact-form .btn i {
@@ -1055,7 +1062,7 @@
 .skill-progress span {
   display: block;
   height: 10px;
-  background: #ff3366; /* Skill bar color */
+  background: #3DDC84; /* Android green skill bar */
   border-radius: 8px;
 }
 
@@ -1068,7 +1075,7 @@
 .header-title {
   font-size: 24px;
   font-weight: 600;
-  color: #ff3366; /* Adjust the color as needed */
+  color: #1B5E20; /* Android green text */
   margin: 0; /* Remove any default margin */
 }
 

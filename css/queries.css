@@ -279,13 +279,13 @@
 
   .nav-btn:hover {
     transform: translateY(-2px);
-    background: #ff124f;
+    background: #3DDC84;
     color: #fff;
   }
 
   .social-link:not(.no-have-icon):hover {
     transform: translateY(-2px);
-    background: #ff124f;
+    background: #3DDC84;
   }
 
   .social-link:hover .social-icon {
@@ -293,7 +293,7 @@
   }
 
   .feat-box:hover {
-    background: #ff124f;
+    background: #3DDC84;
   }
 
   .feat-box:hover .feat-inner {
@@ -320,15 +320,15 @@
 
   .project-title:hover .project-link,
   .blog-title:hover .blog-link {
-    color: #ff124f;
+    color: #1B5E20;
   }
 
   .resume-block--box:hover {
-    background: #ff124f;
+    background: #3DDC84;
   }
 
   .resume-block--box:hover::after {
-    background-color: #ff124f;
+    background-color: #3DDC84;
   }
 
   .resume-block--box:hover .seperator {
@@ -342,7 +342,7 @@
   }
 
   .btn:hover {
-    background: #ff124f;
+    background: #3DDC84;
     transform: translateY(-2px);
   }
 
@@ -358,12 +358,12 @@
 
   .contact-address a:hover,
   .footer-copyright a:hover {
-    color: #ff124f;
+    color: #1B5E20;
     text-decoration: underline;
   }
 
   .to-up-btn:hover {
-    background: #ff124f;
+    background: #3DDC84;
   }
 
   .to-up-btn:hover .to-up-arrow {
