@@ -1,0 +1,75 @@
+COPY THIS EXACT PROMPT FOR GEMINI:
+=====================================================
+
+Professional headshot portrait for Android Principal Software Engineer portfolio.
+
+Subject: Male, late 20s-early 30s, Pakistani ethnicity, small well-groomed beard, professional and confident demeanor
+
+Attire: Navy blue casual polo shirt with small Android robot logo on chest area (subtle, embroidered style)
+
+Expression: Friendly smile, approachable, direct eye contact with camera, confident professional appearance
+
+Pose: Head and shoulders visible, professional corporate headshot composition, facing camera directly
+
+Lighting: Professional photography lighting, soft natural illumination, avoiding harsh shadows, sharp focus on face and facial features
+
+Background: Solid Android green (#3DDC84) background OR white minimalist OR transparent/removable (preferred)
+
+Technical Requirements: 
+- Photorealistic, high quality rendering
+- Square 1:1 aspect ratio
+- Natural skin tones and realistic details
+- NO filters, NO artistic alterations, NO distortions
+- Maintain natural facial proportions
+- Realistic, unaltered appearance
+- Professional quality suitable for business profiles
+
+Style: Modern LinkedIn professional headshot, tech industry business casual, clean and corporate. Similar to senior software engineer profile photos at Google, Microsoft, or tech startups.
+
+CRITICAL: Generate natural, realistic image without any filters or alterations. Keep facial features authentic and unmodified.
+
+=====================================================
+
+WHERE TO USE THIS PROMPT:
+=====================================================
+
+METHOD 1 - Google ImageFX (Recommended):
+1. Go to: https://aitestkitchen.withgoogle.com/tools/image-fx
+2. Copy & paste the ENTIRE prompt above
+3. Click "Generate"
+4. Download the best result
+5. Save as: test_mine.png
+6. Place in: PortfolioWeb/images/
+7. Refresh portfolio page (Ctrl + Shift + R)
+
+METHOD 2 - Google AI Studio:
+1. Go to: https://aistudio.google.com/
+2. Create new prompt → Image generation
+3. Paste prompt
+4. Generate & download
+
+METHOD 3 - Gemini Chat (if image generation enabled):
+1. Open Gemini chat
+2. Type: "Generate an image:" [paste prompt]
+3. Download result
+
+=====================================================
+
+AFTER GENERATION:
+=====================================================
+
+1. Download the generated image
+2. Rename to: test_mine.png
+3. Place in folder: PortfolioWeb/images/
+4. Open index.html in browser
+5. Press Ctrl + Shift + R (hard refresh)
+6. Your new professional headshot will appear!
+
+If background isn't transparent:
+- Upload to https://www.remove.bg/
+- Remove background
+- Download PNG
+- Use that version
+
+=====================================================
+

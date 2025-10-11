@@ -1,0 +1,633 @@
+/* ============================================
+   PORTFOLIO ANIMATIONS
+   Modern, smooth animations for interactive UX
+   ============================================ */
+
+/* Fade-in animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Progress bar fill animation */
+@keyframes progressFill {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--progress-width);
+  }
+}
+
+/* Pulse animation for icons */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* ============================================
+   HERO SECTION ANIMATIONS
+   ============================================ */
+
+.hero--text-box {
+  animation: fadeInLeft 0.8s ease-out;
+}
+
+.hero--image-box {
+  animation: fadeInRight 0.8s ease-out 0.2s backwards;
+}
+
+.heading-sub {
+  animation: fadeIn 0.6s ease-out 0.3s backwards;
+}
+
+.heading-primary {
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+.hero--text-desc {
+  animation: fadeInUp 0.8s ease-out 0.6s backwards;
+}
+
+.hero--social {
+  animation: fadeInUp 0.8s ease-out 0.8s backwards;
+}
+
+/* ============================================
+   PROJECT CARDS ANIMATIONS
+   ============================================ */
+
+.project-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(61, 220, 132, 0.1), transparent);
+  transition: left 0.6s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 25px #c1c9d6, -10px -10px 25px #ffffff;
+}
+
+.project-card:hover::before {
+  left: 100%;
+}
+
+.project-card--head img {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .project-card--head img {
+  transform: scale(1.1);
+}
+
+.project-title {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+  color: #1B5E20;
+}
+
+.project-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #3DDC84;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .project-link::after {
+  width: 100%;
+}
+
+/* ============================================
+   SCROLL ANIMATIONS
+   ============================================ */
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animation delays */
+.project-card:nth-child(1) { animation: fadeInUp 0.6s ease-out 0.1s backwards; }
+.project-card:nth-child(2) { animation: fadeInUp 0.6s ease-out 0.2s backwards; }
+.project-card:nth-child(3) { animation: fadeInUp 0.6s ease-out 0.3s backwards; }
+.project-card:nth-child(4) { animation: fadeInUp 0.6s ease-out 0.4s backwards; }
+.project-card:nth-child(5) { animation: fadeInUp 0.6s ease-out 0.5s backwards; }
+.project-card:nth-child(6) { animation: fadeInUp 0.6s ease-out 0.6s backwards; }
+.project-card:nth-child(7) { animation: fadeInUp 0.6s ease-out 0.7s backwards; }
+.project-card:nth-child(8) { animation: fadeInUp 0.6s ease-out 0.8s backwards; }
+.project-card:nth-child(9) { animation: fadeInUp 0.6s ease-out 0.9s backwards; }
+
+/* ============================================
+   SKILL PROGRESS BARS
+   ============================================ */
+
+.skill-block {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.skill-block.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.skill-progress span {
+  width: 0 !important;
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+.skill-block.animate .skill-progress span {
+  width: var(--skill-width) !important;
+  animation: progressFill 1.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+/* ============================================
+   TIMELINE ANIMATIONS
+   ============================================ */
+
+.timeline-step {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.timeline-step.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline-step:nth-child(1) { transition-delay: 0.1s; }
+.timeline-step:nth-child(2) { transition-delay: 0.3s; }
+.timeline-step:nth-child(3) { transition-delay: 0.5s; }
+
+.timeline-arrow {
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-arrow::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(61, 220, 132, 0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* ============================================
+   FEATURE CARDS ANIMATIONS
+   ============================================ */
+
+.feat-box {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.feat-box:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 8px 8px 20px #c1c9d6, -8px -8px 20px #ffffff;
+}
+
+.feat-icon {
+  transition: all 0.4s ease;
+}
+
+.feat-box:hover .feat-icon {
+  transform: scale(1.1) rotate(5deg);
+  color: #3DDC84;
+}
+
+.feat-arrow {
+  transition: transform 0.3s ease;
+}
+
+.feat-box:hover .feat-arrow {
+  transform: translateX(8px);
+  color: #1B5E20;
+}
+
+/* ============================================
+   SOCIAL MEDIA ICONS
+   ============================================ */
+
+.social-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(61, 220, 132, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.social-link:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.social-icon {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  transform: scale(1.2);
+  color: #1B5E20;
+}
+
+.social-img {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover .social-img {
+  transform: scale(1.15);
+}
+
+/* ============================================
+   NAVIGATION ANIMATIONS
+   ============================================ */
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #3DDC84;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* ============================================
+   BUTTON ANIMATIONS
+   ============================================ */
+
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(61, 220, 132, 0.15);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn span,
+.btn i {
+  position: relative;
+  z-index: 1;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 8px 8px 20px #c1c9d6, -8px -8px 20px #ffffff;
+}
+
+/* ============================================
+   SCROLL TO TOP BUTTON
+   ============================================ */
+
+.to-up-btn {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.to-up-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 8px 8px 20px #c1c9d6, -8px -8px 20px #ffffff;
+}
+
+.to-up-btn:hover .to-up-arrow {
+  animation: bounce 0.6s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* ============================================
+   EDUCATION CARDS
+   ============================================ */
+
+.feat-box.card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feat-box.card:hover {
+  transform: translateY(-8px) rotate(1deg);
+  box-shadow: 10px 10px 25px #c1c9d6, -10px -10px 25px #ffffff;
+}
+
+.feat-box.card .feat-icon {
+  transition: all 0.5s ease;
+}
+
+.feat-box.card:hover .feat-icon {
+  transform: scale(1.15) rotate(360deg);
+  color: #3DDC84;
+}
+
+/* ============================================
+   HEADER ANIMATIONS
+   ============================================ */
+
+.main-header {
+  animation: slideDown 0.6s ease-out;
+}
+
+.header-title {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.inbio-logo:hover .header-title {
+  color: #3DDC84;
+  transform: scale(1.05);
+}
+
+/* ============================================
+   SECTION HEADINGS
+   ============================================ */
+
+.heading-secondary {
+  position: relative;
+  display: inline-block;
+}
+
+.heading-secondary::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #3DDC84, #1B5E20);
+  border-radius: 2px;
+  animation: expandWidth 0.8s ease-out;
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}
+
+/* ============================================
+   PROJECT INFO STATS
+   ============================================ */
+
+.project-stats i {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.project-card:hover .project-stats i {
+  animation: heartbeat 0.6s ease;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1.1); }
+  75% { transform: scale(1.15); }
+}
+
+/* ============================================
+   SMOOTH SCROLL BEHAVIOR
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   LOADING STATES
+   ============================================ */
+
+.hero--inbio-image {
+  /* No animations for profile image - keep it professional */
+  transition: none;
+}
+
+.hero--inbio-image:hover {
+  /* No hover effects on profile image */
+}
+
+/* ============================================
+   RESPONSIVE ANIMATIONS
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ============================================
+   INTERSECTION OBSERVER CLASSES
+   ============================================ */
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for multiple items */
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+.stagger-5 { transition-delay: 0.5s; }
+
+/* ============================================
+   MICRO-INTERACTIONS
+   ============================================ */
+
+/* Smooth color transitions */
+a, button, .social-link, .feat-box, .nav-link {
+  transition: all 0.3s ease;
+}
+
+/* Icon hover effects */
+.feat-icon,
+.social-icon,
+.to-up-arrow {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Card content reveal */
+.project-card .project-desc {
+  opacity: 0.8;
+  transform: translateY(5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover .project-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+/* GPU acceleration for smoother animations */
+.project-card,
+.feat-box,
+.social-link,
+.btn,
+.timeline-step {
+  will-change: transform;
+}
+
+/* Reduce animations on mobile for performance */
+@media (max-width: 768px) {
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feat-box:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+}
+

@@ -1,0 +1,44 @@
+{
+  "model": "gemini-2.0-flash-exp",
+  "prompt": {
+    "text": "Generate a professional headshot portrait for a Principal Software Engineer portfolio. The subject is Hussain, a male Android developer from Pakistan with expertise in Kotlin and mobile development.\n\nAppearance:\n- Small, well-groomed beard\n- Professional, confident demeanor\n- Late 20s to early 30s\n- Pakistani ethnicity\n- Natural, unaltered facial features\n\nAttire:\n- Navy blue casual polo shirt\n- Small Android logo subtly placed on the polo (chest area)\n- Clean, professional tech casual style\n\nExpression & Pose:\n- Confident, friendly expression with slight smile\n- Direct eye contact with camera\n- Professional demeanor suitable for tech industry\n- Approachable and competent appearance\n\nLighting & Photography:\n- Well-lit, professional photography lighting\n- Soft, natural lighting (avoiding harsh shadows)\n- Sharp focus on face\n- Shoulders and upper chest visible (not just face)\n- Modern, clean aesthetic\n- NO filters, NO alterations, NO distortions\n- Natural, realistic rendering\n\nBackground options:\n- Option 1: Solid Android green (#3DDC84) background\n- Option 2: White/light gray minimalist background\n- Option 3: Subtle gradient from Android green (#3DDC84) to darker green (#1B5E20)\n- Option 4: Transparent/removable background (preferred)\n\nTechnical specs:\n- High quality, photorealistic rendering\n- Square aspect ratio (1:1)\n- Professional headshot composition\n- Suitable for LinkedIn, portfolio websites, and business profiles\n- Natural skin tones and realistic details\n- Maintain natural proportions, no distortion\n\nStyle: Professional corporate headshot, modern tech industry casual, clean and approachable. Similar to LinkedIn profile photos of senior software engineers at tech companies.",
+    "parameters": {
+      "aspectRatio": "1:1",
+      "style": "photorealistic",
+      "quality": "high",
+      "format": "portrait",
+      "subject": "professional headshot",
+      "industry": "technology",
+      "role": "Principal Software Engineer"
+    }
+  },
+  "image_config": {
+    "output_format": "PNG",
+    "dimensions": {
+      "width": 512,
+      "height": 512
+    },
+    "quality": 90,
+    "background": "removable"
+  },
+  "alternatives": {
+    "option_1": {
+      "style": "professional_photo",
+      "description": "Photorealistic professional headshot with solid background",
+      "background_color": "#3DDC84"
+    },
+    "option_2": {
+      "style": "professional_avatar",
+      "description": "Professional illustrated avatar in modern corporate style",
+      "theme": "Android developer",
+      "color_scheme": ["#3DDC84", "#1B5E20", "#222"]
+    },
+    "option_3": {
+      "style": "minimal_geometric",
+      "description": "Clean geometric avatar with letter 'H' on Android green background",
+      "letter": "H",
+      "background_gradient": "linear-gradient(135deg, #3DDC84 0%, #1B5E20 100%)"
+    }
+  }
+}
+

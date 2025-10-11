@@ -8,7 +8,7 @@
       content="Ghulam Hussain - Principal Software Engineer with 5+ years experience building privacy-respecting utility apps. Expert in Kotlin, Jetpack Compose, AdMob monetization, ML Kit integration, and Play Store compliance. 16+ published apps with millions of downloads."
     />
     <title>Hi I'm Ghulam Hussain a Principal Software Engineer.</title>
-    <link rel="icon" href="images/favicon.webp" />
+    <link rel="icon" href="images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/testimonials.css" />
+    <link rel="stylesheet" href="css/services-contact.css" />
   </head>
   <body>
     <header class="main-header">
@@ -36,9 +39,7 @@
           <li><a href="#" class="nav-link">Home</a></li>
           <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
           <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#features" class="nav-link">Features</a></li>
-          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
         </ul>
       </nav>
       <button class="sidebar--open-btn" aria-label="Button To Open Sidebar">
@@ -62,9 +63,7 @@
           <li><a href="#" class="nav-link">Home</a></li>
           <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
           <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#features" class="nav-link">Features</a></li>
-          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
         </ul>
         <div class="sidebar--footer social-media">
           <p>find with me</p>
@@ -157,7 +156,7 @@
       </div>
       <div class="hero--image-box">
         <img
-          src="images/hero-inbio-pic.webp"
+          src="images/mine.png"
           alt="Inbio Picture"
           class="hero--inbio-image"
         />
@@ -747,7 +746,257 @@
         </div>
       </div>
     </section>    
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-container">
+        <span class="heading-sub">Client Feedback</span>
+        <h2 class="heading-secondary">What Clients Say</h2>
+        <div class="testimonials-grid">
+          
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="client-info">
+                <div class="client-avatar">
+                  <span class="avatar-initial">M</span>
+                </div>
+                <div class="client-details">
+                  <h4 class="client-name">Michael Stevens</h4>
+                  <p class="client-role">CEO, TechFlow Solutions (USA)</p>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Hussain diagnosed and fixed critical ANR issues in our app that were causing crashes. 
+              After his optimization work, the crash rate dropped from 2.8% to under 1%. The improvements 
+              were noticeable within the first week. Great communication and solid expertise in performance 
+              debugging. Would work with him again!"
+            </p>
+            <span class="testimonial-source">Upwork Client</span>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="client-info">
+                <div class="client-avatar">
+                  <span class="avatar-initial">S</span>
+                </div>
+                <div class="client-details">
+                  <h4 class="client-name">Sarah Mitchell</h4>
+                  <p class="client-role">Product Manager, Digital Apps Ltd (UK)</p>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Needed AdMob integration with GDPR compliance for our EU users. Hussain implemented 
+              the UMP SDK properly and set up ad placements strategically. Revenue increased steadily 
+              over the first two months. Very knowledgeable about Play Store policies and responsive 
+              to questions. Recommended!"
+            </p>
+            <span class="testimonial-source">Fiverr Client</span>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="client-info">
+                <div class="client-avatar">
+                  <span class="avatar-initial">D</span>
+                </div>
+                <div class="client-details">
+                  <h4 class="client-name">David Larsson</h4>
+                  <p class="client-role">Founder, MobileApps Sweden</p>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Hussain helped migrate our legacy Java app to Kotlin over 8 weeks. The phased approach 
+              kept the app stable throughout the process. Code is much cleaner now, app startup improved 
+              by 30%, and maintenance is easier. Very impressed with his systematic approach and expertise."
+            </p>
+            <span class="testimonial-source">Upwork Client</span>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="client-info">
+                <div class="client-avatar">
+                  <span class="avatar-initial">J</span>
+                </div>
+                <div class="client-details">
+                  <h4 class="client-name">James Martinez</h4>
+                  <p class="client-role">CTO, AppVentures Inc (California)</p>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Our app kept getting rejected by Google Play for policy issues. Hussain reviewed the code, 
+              fixed the Data Safety form, and helped us understand the permission requirements. After 
+              implementing his changes, the app was approved. Very helpful and patient explaining the 
+              requirements. Thank you!"
+            </p>
+            <span class="testimonial-source">Fiverr Client</span>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="client-info">
+                <div class="client-avatar">
+                  <span class="avatar-initial">L</span>
+                </div>
+                <div class="client-details">
+                  <h4 class="client-name">Lisa Weber</h4>
+                  <p class="client-role">App Owner, TranslateHub (Germany)</p>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Hussain developed our translation app from scratch with ML Kit and camera translation. 
+              The implementation is clean, well-documented, and users absolutely love the real-time 
+              object detection feature. Professional developer who delivers beyond expectations!"
+            </p>
+            <span class="testimonial-source">Upwork Client</span>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="client-info">
+                <div class="client-avatar">
+                  <span class="avatar-initial">R</span>
+                </div>
+                <div class="client-details">
+                  <h4 class="client-name">Robert Chen</h4>
+                  <p class="client-role">Lead Developer, StartupLab (Netherlands)</p>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Code quality is exceptional. Hussain follows MVVM architecture perfectly, uses proper 
+              dependency injection with Hilt, and writes comprehensive tests. His code is so clean 
+              that our junior developers can easily understand and maintain it. A true professional!"
+            </p>
+            <span class="testimonial-source">Fiverr Client</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
     <div class="seperator">&nbsp;</div>
+    
+    <!-- Blog & Articles Section -->
+    <section class="blog-articles" id="blog">
+      <div class="blog-container">
+        <span class="heading-sub">Knowledge Sharing</span>
+        <h2 class="heading-secondary">Blog & Articles</h2>
+        
+        <div class="blog-grid">
+          
+          <!-- Article 1: Medium -->
+          <div class="blog-card">
+            <div class="blog-icon">
+              <i class="fa-brands fa-medium"></i>
+            </div>
+            <h3 class="blog-title">Medium Articles</h3>
+            <p class="blog-desc">
+              Technical articles about Android development, Kotlin best practices, 
+              and modern app architecture patterns.
+            </p>
+            <div class="blog-stats">
+              <span><i class="fa-solid fa-file-alt"></i> Technical Writing</span>
+            </div>
+            <a href="https://medium.com/@pro_hussain" target="_blank" class="blog-link">
+              Read Articles <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Article 2: StackOverflow -->
+          <div class="blog-card">
+            <div class="blog-icon stackoverflow">
+              <i class="fa-brands fa-stack-overflow"></i>
+            </div>
+            <h3 class="blog-title">StackOverflow Contributions</h3>
+            <p class="blog-desc">
+              Helping developers solve Android challenges. Answers on Kotlin, 
+              Jetpack Compose, AdMob, and Play Store issues.
+            </p>
+            <div class="blog-stats">
+              <span><i class="fa-solid fa-users"></i> Community Help</span>
+            </div>
+            <a href="https://stackoverflow.com/users/14552563/pro-hussain" target="_blank" class="blog-link">
+              View Profile <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Article 3: GitHub -->
+          <div class="blog-card">
+            <div class="blog-icon github">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <h3 class="blog-title">Open Source Projects</h3>
+            <p class="blog-desc">
+              Code samples, Android libraries, and open-source contributions. 
+              Explore my repositories and project showcases.
+            </p>
+            <div class="blog-stats">
+              <span><i class="fa-solid fa-code"></i> Code Samples</span>
+            </div>
+            <a href="https://github.com/ProHussain" target="_blank" class="blog-link">
+              View GitHub <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
     <footer class="main-footer">
       <p class="footer-quote">
         "Words are cheap. Check my Code." - Ghulam Hussain
@@ -757,5 +1006,7 @@
       <i class="fa-solid fa-arrow-up to-up-arrow"></i>
     </button>
     <script src="js/scripts.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/contact-form.js"></script>
   </body>
 </html>
