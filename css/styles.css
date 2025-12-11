@@ -1,4 +1,4 @@
-/* Start Main Header Styles */
+﻿/* Start Main Header Styles */
 
 .main-header {
   height: 9.6rem;
@@ -37,7 +37,7 @@
   border-radius: 9px;
   box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  color: #1B5E20;
+  color: var(--color-primary);
   transition: transform 0.4s, background 0.4s, color 0.4s;
 }
 
@@ -113,7 +113,7 @@
 .sidebar--close-icon,
 .sidebar--open-icon {
   font-size: 2rem;
-  color: #1B5E20;
+  color: var(--color-primary);
 }
 
 .sidebar--desc {
@@ -215,7 +215,7 @@
 .feat-icon,
 .feat-arrow {
   font-size: 3.6rem;
-  color: #1B5E20;
+  color: var(--color-primary);
   transition: color 0.4s;
 }
 
@@ -265,7 +265,8 @@
 }
 
 .project-card--head img {
-  max-width: 100%;
+  width: 100%;
+  height: 25rem;
   object-fit: cover;
   transition: transform 0.4s;
 }
@@ -282,10 +283,10 @@
 }
 
 .project-type {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.4rem;
   letter-spacing: 0.5px;
-  color: #1B5E20;
+  color: var(--color-primary-light);
 }
 
 .project-stats {
@@ -317,20 +318,26 @@
 .resume {
   padding: 6.4rem 16rem;
   display: grid;
-  grid-template-columns: 1fr; /* Single column layout */
-  gap: 4.8rem; /* Unified gap between items */
+  grid-template-columns: 1fr;
+  /* Single column layout */
+  gap: 4.8rem;
+  /* Unified gap between items */
 }
 
 .resume-section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns for education and experience */
-  column-gap: 3.2rem; /* Space between columns */
-  row-gap: 4.8rem; /* Space between rows */
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns for education and experience */
+  column-gap: 3.2rem;
+  /* Space between columns */
+  row-gap: 4.8rem;
+  /* Space between rows */
 }
 
 @media (max-width: 1024px) {
   .resume-section {
-    grid-template-columns: 1fr; /* Single column on smaller screens */
+    grid-template-columns: 1fr;
+    /* Single column on smaller screens */
   }
 }
 
@@ -352,15 +359,19 @@
   font-size: 1.4rem;
   line-height: 1.8;
 }
+
 /* Experience Timeline Container */
 .timeline {
   position: relative;
   margin-top: 4.8rem;
   display: flex;
   flex-direction: column;
-  row-gap: 3.2rem; /* Space between steps */
-  padding-left: 3rem; /* Space for arrows */
-  border-left: 4px solid #d9dee2; /* Vertical line indicating the timeline */
+  row-gap: 3.2rem;
+  /* Space between steps */
+  padding-left: 3rem;
+  /* Space for arrows */
+  border-left: 4px solid #d9dee2;
+  /* Vertical line indicating the timeline */
 }
 
 /* Individual Step in Timeline */
@@ -412,7 +423,8 @@
 
 /* Hide Arrow for the Last Step */
 .timeline-step:last-child .timeline-arrow {
-  display: none; /* No arrow for the last step */
+  display: none;
+  /* No arrow for the last step */
 }
 
 /* Hover Effect */
@@ -434,28 +446,38 @@
     left: -0.8rem;
   }
 }
+
 /* Styling for Timeline Step Content with Bullet Points */
 .timeline-content ul {
-  list-style-type: disc; /* Bullet type */
-  padding-left: 1.5rem; /* Indentation for bullets */
-  margin-bottom: 1rem; /* Space below the list */
+  list-style-type: disc;
+  /* Bullet type */
+  padding-left: 1.5rem;
+  /* Indentation for bullets */
+  margin-bottom: 1rem;
+  /* Space below the list */
 }
 
 .timeline-content ul li {
   font-size: 1.4rem;
   color: #555;
-  line-height: 1.8; /* Comfortable line height */
-  margin-bottom: 0.6rem; /* Space between list items */
+  line-height: 1.8;
+  /* Comfortable line height */
+  margin-bottom: 0.6rem;
+  /* Space between list items */
 }
 
 .timeline-content ul li::marker {
-  color: #1B5E20; /* Custom bullet color */
+  color: var(--color-primary);
+  /* Custom bullet color */
 }
+
 /* Skills Section */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-  gap: 2.4rem; /* Space between skill blocks */
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns layout */
+  gap: 2.4rem;
+  /* Space between skill blocks */
   padding: 2.4rem 0;
 }
 
@@ -484,20 +506,25 @@
 .skill-progress span {
   display: block;
   height: 10px;
-  background: #3DDC84; /* Android green skill bar */
+  background: #3DDC84;
+  /* Android green skill bar */
   border-radius: 8px;
 }
 
 @media (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: 1fr; /* Single column on small screens */
+    grid-template-columns: 1fr;
+    /* Single column on small screens */
   }
 }
+
 /* Skills Section */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-  gap: 2.4rem; /* Space between skill blocks */
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns layout */
+  gap: 2.4rem;
+  /* Space between skill blocks */
   padding: 2.4rem 0;
 }
 
@@ -526,13 +553,15 @@
 .skill-progress span {
   display: block;
   height: 10px;
-  background: #3DDC84; /* Android green skill bar */
+  background: #3DDC84;
+  /* Android green skill bar */
   border-radius: 8px;
 }
 
 @media (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: 1fr; /* Single column on small screens */
+    grid-template-columns: 1fr;
+    /* Single column on small screens */
   }
 }
 
@@ -648,7 +677,7 @@
 }
 
 .testimonial--client-say--evaluation-star {
-  color: #1B5E20;
+  color: var(--color-primary);
   font-size: 1.2rem;
 }
 
@@ -797,7 +826,7 @@
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   font-size: 1.6rem;
   font-weight: 500;
-  color: #1B5E20;
+  color: var(--color-primary);
 }
 
 .pricing-plan--desc {
@@ -822,7 +851,7 @@
 
 .pricing-plan-feat i {
   margin-right: 0.4rem;
-  color: #1B5E20;
+  color: var(--color-primary);
 }
 
 /* End Pricing Styles */
@@ -873,7 +902,7 @@
   font-weight: 400;
   font-size: 1.4rem;
   letter-spacing: 0.5px;
-  color: #1B5E20;
+  color: var(--color-primary);
 }
 
 .blog-stats {
@@ -1032,8 +1061,10 @@
 /* Skills Section */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-  gap: 2.4rem; /* Space between skill blocks */
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns layout */
+  gap: 2.4rem;
+  /* Space between skill blocks */
   padding: 2.4rem 0;
 }
 
@@ -1062,27 +1093,115 @@
 .skill-progress span {
   display: block;
   height: 10px;
-  background: #3DDC84; /* Android green skill bar */
+  background: #3DDC84;
+  /* Android green skill bar */
   border-radius: 8px;
 }
 
 @media (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: 1fr; /* Single column on small screens */
+    grid-template-columns: 1fr;
+    /* Single column on small screens */
   }
 }
 
 .header-title {
   font-size: 24px;
   font-weight: 600;
-  color: #1B5E20; /* Android green text */
-  margin: 0; /* Remove any default margin */
+  color: var(--color-primary);
+  /* Android green text */
+  margin: 0;
+  /* Remove any default margin */
 }
 
 .footer-quote {
   font-size: 16px;
   font-style: italic;
   text-align: center;
-  color: #777; /* Adjust the color as needed */
-  padding: 20px; /* Adjust padding for spacing */
+  color: #777;
+  /* Adjust the color as needed */
+  padding: 20px;
+  /* Adjust padding for spacing */
+}
+
+/* ============================================
+   NEW STYLES FOR RESUME UPDATE
+   ============================================ */
+
+/* Skill Tags (Replacing Progress Bars) */
+.skills-category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+}
+
+@media (max-width: 768px) {
+  .skills-category-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-category-card {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
+  padding: 2.4rem;
+  border-radius: 11px;
+  transition: transform 0.3s ease;
+}
+
+.skill-category-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-category-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+  color: var(--color-primary);
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.8rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-tags span {
+  font-size: 1.3rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #e8f5e9;
+  /* Light green background */
+  color: var(--color-primary);
+  border-radius: 50px;
+  font-weight: 500;
+  border: 1px solid #c8e6c9;
+  transition: all 0.3s ease;
+}
+
+.skill-tags span:hover {
+  background-color: #3DDC84;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhancements for Resume Timeline */
+.timeline-content ul {
+  list-style-position: inside;
+  margin-left: 0.5rem;
+}
+
+.timeline-content ul li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+/* Skill Category Description */
+.skill-category-desc {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.6rem;
+  font-weight: 400;
 }

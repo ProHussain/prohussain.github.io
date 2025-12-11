@@ -1,0 +1,68 @@
+/* Principal-level enhancements - Monochromatic Deep Blue */
+
+/* Section headers with primary color */
+.heading-secondary {
+    color: var(--color-primary);
+}
+
+/* Skill category headers */
+.skill-category-card h3 {
+    color: var(--color-primary);
+}
+
+/* Timeline dots */
+.timeline-step::before {
+    background-color: var(--color-primary) !important;
+}
+
+/* Project stats icons */
+.project-stats i {
+    color: var(--color-primary-light);
+}
+
+/* Subtle hover effect to project cards */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 8px 8px 20px var(--color-shadow-dark), -8px -8px 20px var(--color-shadow-light);
+}
+
+.project-card:hover .project-link {
+    color: var(--color-primary-light);
+}
+
+/* Enhanced nav button */
+.nav-btn {
+    color: var(--color-primary);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: var(--color-primary);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 8px 8px 20px var(--color-shadow-dark), -8px -8px 20px var(--color-shadow-light);
+}
+
+/* Active nav link */
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: var(--color-primary-light);
+}
+
+/* Social icons hover */
+.social-link:hover {
+    transform: translateY(-2px);
+}
+
+.social-link:hover .social-icon {
+    color: var(--color-primary-lighter);
+}
