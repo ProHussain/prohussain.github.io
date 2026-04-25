@@ -237,3 +237,162 @@
 .project-card--flagship .project-title .project-link {
   color: var(--color-accent);
 }
+
+/* ============================================
+   EXPERIENCE TIMELINE
+   ============================================ */
+
+.timeline {
+  position: relative;
+  padding-left: 2.8rem;
+  border-left: 2px solid var(--color-accent);
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+
+/* Timeline dot */
+.timeline-step::before {
+  content: "";
+  position: absolute;
+  left: -3.5rem;
+  top: 0.8rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 2px solid var(--color-accent);
+  box-sizing: border-box;
+}
+
+/* Current role dot — filled with glow ring */
+.timeline-step--current::before {
+  background: var(--color-accent);
+  border: 3px solid var(--color-bg);
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+/* Oldest entry — dimmed dot */
+.timeline-step--faded::before {
+  border-color: var(--color-border);
+}
+
+.timeline-content {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 2rem;
+  position: relative;
+}
+
+/* Current role card — green border + gradient bg */
+.timeline-step--current .timeline-content {
+  border-color: var(--color-accent);
+  background: linear-gradient(135deg, #0d2818, var(--color-surface));
+}
+
+/* Oldest entry — reduced opacity */
+.timeline-step--faded .timeline-content {
+  opacity: 0.8;
+}
+
+/* CURRENT badge */
+.timeline-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--color-accent);
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: monospace;
+  letter-spacing: 1px;
+  padding: 0.3rem 1rem;
+  border-radius: 0 10px 0 8px;
+}
+
+.timeline-content h3 {
+  color: var(--color-text);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-company {
+  display: block;
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.timeline-date {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Multi-role company header */
+.timeline-company-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1.2rem;
+}
+
+.timeline-company-header h3 {
+  color: var(--color-accent);
+  margin-bottom: 0;
+}
+
+.timeline-duration {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+}
+
+/* Sub-role entries */
+.timeline-subrole {
+  padding: 0.6rem 0 0.6rem 1.2rem;
+  border-left: 2px solid var(--color-border);
+  margin-bottom: 0.8rem;
+}
+
+.timeline-subrole h4 {
+  color: var(--color-text);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+/* Timeline bullet points */
+.timeline-content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.timeline-content li {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  color: var(--color-text-muted);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.timeline-content li::before {
+  content: "▸";
+  color: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+/* Remove old timeline-arrow styling */
+.timeline-arrow {
+  display: none;
+}
