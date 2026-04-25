@@ -1,31 +1,22 @@
 /*
-
-- Font sizes (px): 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Font weights: 400 / 500 / 600 / 700
-
-- Line heights: 1 / 1.05 / 1.2 / 1.6 / 1.8
-
-- Letter spacing: 0.5px / 0.75px / 2px
-
-- colors: #000 / #222 / #555 / #fff / #ecf0f3 / #E4E6EA / #d9dee2 / #1B5E20 (text) / #3DDC84 (bg)
-
-- SHADOWS : 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff
-
-- Background: linear-gradient(145deg, #e2e8ec, #ffffff)
-
-- BORDER-RADIUS: 4px / 9px / 11px
-
-- Spacing system (px): 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-*/
+ * DESIGN TOKENS — Dark Android Theme
+ *
+ * --color-bg:           #0d1117   page background
+ * --color-surface:      #161b22   cards, panels
+ * --color-surface-2:    #21262d   nested elements
+ * --color-border:       #30363d   card borders, dividers
+ * --color-text:         #e6edf3   primary text
+ * --color-text-muted:   #8b949e   secondary/meta text
+ * --color-accent:       #3DDC84   Android green — CTAs, active states
+ * --color-accent-dark:  #1B5E20   green gradients, hover overlays
+ * --color-accent-dim:   rgba(61,220,132,0.1)  green tint backgrounds
+ */
 
 :root {
   --color-bg:           #0d1117;
   --color-surface:      #161b22;
   --color-surface-2:    #21262d;
   --color-border:       #30363d;
-  --color-border-muted: #21262d;
   --color-text:         #e6edf3;
   --color-text-muted:   #8b949e;
   --color-accent:       #3DDC84;
@@ -92,7 +83,6 @@ a {
 .social-link:hover {
   border-color: var(--color-accent);
   background: var(--color-accent-dim);
-  transform: none;
 }
 
 .social-icon {
