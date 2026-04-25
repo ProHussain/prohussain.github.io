@@ -1,19 +1,43 @@
 ﻿/* Start Main Header Styles */
 
 .main-header {
-  height: 9.6rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 6.4rem;
   padding: 0 3.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--color-bg);
+  background: rgba(13, 17, 23, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border);
 }
 
+/* Logo */
 .inbio-logo {
   display: flex;
+  align-items: center;
+  gap: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Poppins", monospace;
+  letter-spacing: 0.5px;
+  text-decoration: none;
 }
 
+.logo-bracket {
+  color: var(--color-accent);
+  opacity: 0.7;
+}
+
+.logo-name {
+  color: var(--color-text);
+  margin: 0 0.2rem;
+}
+
+/* Nav */
 .navbar {
   display: block;
 }
@@ -21,22 +45,45 @@
 .nav-links {
   display: flex;
   align-items: center;
+  gap: 0.4rem;
 }
 
 .nav-link {
   display: inline-block;
-  padding: 1.2rem 1.6rem;
-  font-size: 1.4rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  text-transform: uppercase;
   color: var(--color-text-muted);
-  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-radius: 6px;
+  transition: color 0.25s ease, background 0.25s ease;
 }
 
 .nav-link:hover {
   color: var(--color-accent);
-  border-bottom: 1px solid var(--color-accent);
-  padding-bottom: calc(1.2rem - 1px);
+  background: var(--color-accent-dim);
+}
+
+/* Header right: hire button + hamburger */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.btn-hire {
+  display: inline-block;
+  padding: 0.7rem 1.8rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-bg);
+  background: var(--color-accent);
+  border-radius: 6px;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.btn-hire:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
 }
 
 .sidebar--open-btn {
@@ -1148,20 +1195,12 @@
   }
 }
 
-.header-title {
-  color: var(--color-accent);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
 .footer-quote {
-  font-size: 16px;
+  font-size: 1.4rem;
   font-style: italic;
   text-align: center;
-  color: #777;
-  /* Adjust the color as needed */
+  color: var(--color-text-muted);
+  /*
   padding: 20px;
   /* Adjust padding for spacing */
 }

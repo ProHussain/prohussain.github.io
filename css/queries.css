@@ -29,6 +29,10 @@
     display: block;
   }
 
+  .btn-hire {
+    display: none;
+  }
+
   .heading-primary {
     font-size: 5.2rem;
   }

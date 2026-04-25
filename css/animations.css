@@ -463,13 +463,12 @@
   animation: slideDown 0.6s ease-out;
 }
 
-.header-title {
-  transition: color 0.3s ease, transform 0.3s ease;
+.logo-name {
+  transition: color 0.3s ease;
 }
 
-.inbio-logo:hover .header-title {
-  color: #3DDC84;
-  transform: scale(1.05);
+.inbio-logo:hover .logo-name {
+  color: var(--color-accent);
 }
 
 /* ============================================
