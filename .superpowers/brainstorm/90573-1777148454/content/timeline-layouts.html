@@ -1,0 +1,145 @@
+<h2>Experience / Timeline — Which layout?</h2>
+<p class="subtitle">Dark theme with Android green. All 3 companies, same content — different structure.</p>
+
+<div class="cards">
+
+  <!-- Option A: Left line + cards -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#0d1117; padding:16px; border-radius:8px; min-height:200px;">
+      <div style="position:relative; padding-left:20px; border-left:2px solid #3DDC84;">
+
+        <!-- Entry 1 -->
+        <div style="position:relative; margin-bottom:14px;">
+          <div style="position:absolute;left:-25px;top:4px;width:10px;height:10px;background:#3DDC84;border-radius:50%;border:2px solid #0d1117;"></div>
+          <div style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:10px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+              <div style="height:7px;width:45%;background:#fff;border-radius:3px;"></div>
+              <div style="height:5px;width:28%;background:#3DDC84;border-radius:3px;opacity:0.7;"></div>
+            </div>
+            <div style="height:5px;width:55%;background:#30363d;border-radius:3px;margin-bottom:5px;"></div>
+            <div style="height:4px;width:85%;background:#21262d;border-radius:2px;margin-bottom:3px;"></div>
+            <div style="height:4px;width:70%;background:#21262d;border-radius:2px;"></div>
+          </div>
+        </div>
+
+        <!-- Entry 2 -->
+        <div style="position:relative; margin-bottom:14px;">
+          <div style="position:absolute;left:-25px;top:4px;width:10px;height:10px;background:#30363d;border-radius:50%;border:2px solid #3DDC84;"></div>
+          <div style="background:#161b22;border:1px solid #30363d;border-radius:8px;padding:10px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+              <div style="height:7px;width:40%;background:#c9d1d9;border-radius:3px;"></div>
+              <div style="height:5px;width:28%;background:#30363d;border-radius:3px;"></div>
+            </div>
+            <div style="height:5px;width:50%;background:#30363d;border-radius:3px;margin-bottom:5px;"></div>
+            <div style="height:4px;width:80%;background:#21262d;border-radius:2px;margin-bottom:3px;"></div>
+            <div style="height:4px;width:65%;background:#21262d;border-radius:2px;"></div>
+          </div>
+        </div>
+
+        <!-- Entry 3 -->
+        <div style="position:relative;">
+          <div style="position:absolute;left:-25px;top:4px;width:10px;height:10px;background:#30363d;border-radius:50%;border:2px solid #30363d;"></div>
+          <div style="background:#161b22;border:1px solid #21262d;border-radius:8px;padding:10px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+              <div style="height:7px;width:35%;background:#8b949e;border-radius:3px;"></div>
+              <div style="height:5px;width:25%;background:#30363d;border-radius:3px;"></div>
+            </div>
+            <div style="height:5px;width:45%;background:#30363d;border-radius:3px;margin-bottom:5px;"></div>
+            <div style="height:4px;width:75%;background:#21262d;border-radius:2px;"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Vertical Line + Cards</h3>
+      <p>Green left border line with dot markers. Each job is a dark card showing role, company, date, and bullet points. Current job dot is filled green. Clean and easy to scan top-to-bottom.</p>
+    </div>
+  </div>
+
+  <!-- Option B: Horizontal scrolling roles -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#0d1117; padding:16px; border-radius:8px; min-height:200px; display:flex; flex-direction:column; gap:8px;">
+
+      <!-- Company tabs -->
+      <div style="display:flex;gap:8px;">
+        <div style="padding:5px 10px;background:#3DDC84;border-radius:5px;font-size:9px;color:#0d1117;font-weight:700;font-family:monospace;">OZI Publishing</div>
+        <div style="padding:5px 10px;background:#161b22;border:1px solid #30363d;border-radius:5px;font-size:9px;color:#8b949e;font-family:monospace;">Jeux Dev</div>
+        <div style="padding:5px 10px;background:#161b22;border:1px solid #30363d;border-radius:5px;font-size:9px;color:#8b949e;font-family:monospace;">Facile</div>
+      </div>
+
+      <!-- Active card content -->
+      <div style="flex:1;background:#161b22;border:1px solid #3DDC84;border-radius:8px;padding:12px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">
+          <div>
+            <div style="height:8px;width:120px;background:#fff;border-radius:3px;margin-bottom:5px;"></div>
+            <div style="height:5px;width:80px;background:#3DDC84;border-radius:3px;opacity:0.8;"></div>
+          </div>
+          <div style="background:#0d1117;border:1px solid #30363d;border-radius:4px;padding:3px 7px;">
+            <div style="height:4px;width:50px;background:#8b949e;border-radius:2px;"></div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <div style="display:flex;align-items:center;gap:5px;">
+            <div style="width:5px;height:5px;background:#3DDC84;border-radius:50%;flex-shrink:0;"></div>
+            <div style="height:4px;flex:1;background:#30363d;border-radius:2px;"></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:5px;">
+            <div style="width:5px;height:5px;background:#3DDC84;border-radius:50%;flex-shrink:0;"></div>
+            <div style="height:4px;width:85%;background:#30363d;border-radius:2px;"></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:5px;">
+            <div style="width:5px;height:5px;background:#3DDC84;border-radius:50%;flex-shrink:0;"></div>
+            <div style="height:4px;width:90%;background:#30363d;border-radius:2px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Tabbed Company Switcher</h3>
+      <p>Company names as clickable tabs at the top. Selecting a tab reveals that job's full details below. Compact, interactive. Good for mobile — no long scrolling through experience.</p>
+    </div>
+  </div>
+
+  <!-- Option C: Full-width highlighted cards -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#0d1117; padding:16px; border-radius:8px; min-height:200px; display:flex; flex-direction:column; gap:8px;">
+
+      <!-- Card 1 - current role, prominent -->
+      <div style="background:linear-gradient(135deg,#0d2818,#161b22);border:1px solid #3DDC84;border-radius:10px;padding:12px;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;right:0;background:#3DDC84;color:#000;font-size:7px;font-family:monospace;font-weight:700;padding:2px 8px;border-radius:0 10px 0 6px;">CURRENT</div>
+        <div style="height:7px;width:55%;background:#3DDC84;border-radius:3px;margin-bottom:5px;"></div>
+        <div style="height:5px;width:40%;background:#8b949e;border-radius:3px;margin-bottom:8px;"></div>
+        <div style="display:flex;gap:4px;flex-wrap:wrap;">
+          <div style="height:14px;width:50px;background:#0d1117;border:1px solid #3DDC84;border-radius:12px;"></div>
+          <div style="height:14px;width:40px;background:#0d1117;border:1px solid #30363d;border-radius:12px;"></div>
+          <div style="height:14px;width:45px;background:#0d1117;border:1px solid #30363d;border-radius:12px;"></div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div style="background:#161b22;border:1px solid #30363d;border-radius:10px;padding:10px;">
+        <div style="height:6px;width:45%;background:#c9d1d9;border-radius:3px;margin-bottom:5px;"></div>
+        <div style="height:4px;width:35%;background:#8b949e;border-radius:3px;margin-bottom:6px;"></div>
+        <div style="display:flex;gap:4px;">
+          <div style="height:12px;width:40px;background:#21262d;border:1px solid #30363d;border-radius:10px;"></div>
+          <div style="height:12px;width:35px;background:#21262d;border:1px solid #30363d;border-radius:10px;"></div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div style="background:#161b22;border:1px solid #21262d;border-radius:10px;padding:10px;opacity:0.7;">
+        <div style="height:6px;width:38%;background:#8b949e;border-radius:3px;margin-bottom:5px;"></div>
+        <div style="height:4px;width:30%;background:#30363d;border-radius:3px;"></div>
+      </div>
+
+    </div>
+    <div class="card-body">
+      <h3>C — Stacked Cards with Role Chips</h3>
+      <p>Each job is a full-width card. Current role gets a "CURRENT" badge and green glow border. Older roles fade slightly. Skill tags shown as chips on each card. Bold and easy to compare roles at a glance.</p>
+    </div>
+  </div>
+
+</div>
+
+<p class="subtitle" style="margin-top:16px;text-align:center;">Click a card or reply in terminal</p>

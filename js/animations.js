@@ -285,3 +285,130 @@ function isInViewport(element) {
   );
 }
 
+
+// ============================================
+// EXPERIENCE TABS
+// ============================================
+(function () {
+  const tabBtns = document.querySelectorAll('.exp-tab-btn');
+  const tabPanels = document.querySelectorAll('.exp-tab-panel');
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+
+      tabBtns.forEach(b => b.classList.remove('active'));
+      tabPanels.forEach(p => p.classList.remove('active'));
+
+      btn.classList.add('active');
+      const panel = document.querySelector(`.exp-tab-panel[data-panel="${target}"]`);
+      if (panel) panel.classList.add('active');
+    });
+  });
+})();
+
+// ============================================
+// TERMINAL TYPING ANIMATION
+// ============================================
+(function () {
+  const terminal = document.querySelector('.hero--terminal .terminal-body');
+  if (!terminal) return;
+
+  const lines = [
+    { type: 'cmd', text: 'cat profile.json' },
+    { type: 'bracket', text: '{' },
+    { type: 'kv', key: '"platforms"',     val: '"Android · Flutter · iOS · KMP"', comma: true },
+    { type: 'kv', key: '"downloads"',     val: '"50M+"',  comma: true },
+    { type: 'kv', key: '"crash_free"',    val: '"99.9%"', comma: true },
+    { type: 'kv', key: '"revenue_growth"',val: '"+30%"',  comma: true },
+    { type: 'kv', key: '"apps_built"',    val: '"50+"',   comma: true },
+    { type: 'kv', key: '"experience"',    val: '"6 years"', comma: false },
+    { type: 'bracket', text: '}' },
+  ];
+
+  // Build a line element from a descriptor
+  function buildLine(desc) {
+    const d = document.createElement('div');
+    if (desc.type === 'cmd') {
+      d.innerHTML = `<span class="terminal-prompt">❯</span> <span class="terminal-cmd">${desc.text}</span>`;
+    } else if (desc.type === 'bracket') {
+      d.className = 'terminal-bracket';
+      d.textContent = desc.text;
+    } else if (desc.type === 'kv') {
+      d.className = 'terminal-line';
+      d.innerHTML = `&nbsp;&nbsp;<span class="terminal-key">${desc.key}</span><span class="terminal-bracket">: </span><span class="terminal-val">${desc.val}</span><span class="terminal-bracket">${desc.comma ? ',' : ''}</span>`;
+    }
+    return d;
+  }
+
+  // Typing effect for the command line
+  function typeCommand(text, callback) {
+    const d = document.createElement('div');
+    d.innerHTML = `<span class="terminal-prompt">❯</span> <span class="terminal-cmd"></span>`;
+    terminal.innerHTML = '';
+    terminal.appendChild(d);
+
+    const cmdSpan = d.querySelector('.terminal-cmd');
+    let i = 0;
+    const interval = setInterval(() => {
+      cmdSpan.textContent += text[i];
+      i++;
+      if (i >= text.length) {
+        clearInterval(interval);
+        setTimeout(callback, 300);
+      }
+    }, 55);
+  }
+
+  // Reveal JSON lines one by one
+  function revealLines(lineDescs, cursor) {
+    let i = 0;
+    function next() {
+      if (i >= lineDescs.length) {
+        terminal.appendChild(cursor);
+        return;
+      }
+      const el = buildLine(lineDescs[i]);
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(4px)';
+      el.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+      terminal.appendChild(el);
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        });
+      });
+
+      i++;
+      setTimeout(next, 120);
+    }
+    next();
+  }
+
+  // Cursor element
+  function makeCursor() {
+    const d = document.createElement('div');
+    d.innerHTML = `<span class="terminal-prompt">❯</span> <span class="terminal-cursor">&nbsp;</span>`;
+    return d;
+  }
+
+  // Only animate when hero is visible
+  const hero = document.querySelector('.hero--terminal');
+  if (!hero) return;
+
+  let animated = false;
+  const io = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && !animated) {
+      animated = true;
+      io.disconnect();
+      setTimeout(() => {
+        typeCommand('cat profile.json', () => {
+          revealLines(lines.slice(1), makeCursor());
+        });
+      }, 400);
+    }
+  }, { threshold: 0.3 });
+  io.observe(hero);
+})();

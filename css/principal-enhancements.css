@@ -536,3 +536,164 @@
 .blog-link:hover {
   opacity: 0.8;
 }
+/* ============================================
+   EXPERIENCE TABS
+   ============================================ */
+
+.exp-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Tab button list — left-aligned pill row */
+.exp-tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0;
+}
+
+.exp-tab-btn {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 1rem 1.8rem;
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  margin-bottom: -1px;
+  white-space: nowrap;
+}
+
+.exp-tab-btn:hover {
+  color: var(--color-text);
+}
+
+.exp-tab-btn.active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+/* Tab panel */
+.exp-tab-panel {
+  display: none;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 2.4rem;
+  animation: fadeIn 0.25s ease;
+}
+
+.exp-tab-panel.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Panel header */
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.exp-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.exp-role {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.exp-role-sep {
+  color: var(--color-text-muted);
+  font-weight: 400;
+  margin: 0 0.4rem;
+}
+
+.exp-company {
+  font-size: 1.3rem;
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.exp-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.6rem;
+}
+
+.exp-badge {
+  background: var(--color-accent);
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: monospace;
+  letter-spacing: 1px;
+  padding: 0.2rem 0.8rem;
+  border-radius: 4px;
+}
+
+.exp-date {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+}
+
+/* Sub-role tags */
+.exp-subroles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.exp-subrole-tag {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+}
+
+/* Bullet list */
+.exp-bullets {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.exp-bullets li {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  color: var(--color-text-muted);
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+.exp-bullets li::before {
+  content: "▸";
+  color: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
