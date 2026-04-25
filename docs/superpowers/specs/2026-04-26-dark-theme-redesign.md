@@ -1,7 +1,7 @@
 # Portfolio Dark Theme Redesign — Design Spec
 
 **Date:** 2026-04-26  
-**Scope:** Full visual redesign of prohussain.github.io — all 8 sections  
+**Scope:** Full visual redesign of prohussain.github.io — all 8 sections, content updated from LinkedIn profile  
 **Approach:** Full redesign (Option 1) — clean dark token system, no neumorphic remnants
 
 ---
@@ -62,15 +62,22 @@ Replace all neumorphic CSS variables in `global.css` with:
 
 **Left column — intro text:**
 - Role tag: `color: var(--color-accent)`, small caps, letter-spacing 3px, `display: block`, margin-bottom
+- Text: `"Full-Stack Mobile Developer · Android · Flutter · iOS · KMP"`
 - Heading: `color: var(--color-text)`, 6.2rem, "Ghulam Hussain" in `var(--color-accent)`
-- Bio paragraph: `color: var(--color-text-muted)`, trimmed to 2 sentences max
+- Bio paragraph: `color: var(--color-text-muted)`, trimmed to 2 sentences max — e.g. "6+ years building high-performance apps across Android, Flutter, iOS, and KMP. Clean Architecture, monetization strategy, and 20M+ users reached."
 - Social icon links: `background: var(--color-surface)`, `border: 1px solid var(--color-border)`, 36×36px, border-radius 8px; hover → `border-color: var(--color-accent)`
 
 **Right column — terminal window:**
 - Outer: `background: var(--color-surface)`, `border: 1px solid var(--color-border)`, `border-radius: 12px`, `overflow: hidden`
 - Title bar: `background: var(--color-surface-2)`, `border-bottom: 1px solid var(--color-border)`, traffic-light dots (red/yellow/green), session label in muted text
 - Body: monospace font, `font-size: 1.3rem`, line-height 1.9
-- Content: `cat profile.json` command in muted, JSON output with key names in `#79c0ff` (blue), values in `var(--color-accent)` — showing users_reached, crash_free, revenue_growth, apps_built, experience
+- Content: `cat profile.json` command in muted, JSON output with key names in `#79c0ff` (blue), values in `var(--color-accent)` — showing:
+  - `"platforms"`: `"Android · Flutter · iOS · KMP"`
+  - `"users_reached"`: `"20M+"`
+  - `"crash_free"`: `"99.9%"`
+  - `"revenue_growth"`: `"+30%"`
+  - `"apps_built"`: `"15+"`
+  - `"experience"`: `"6 years"`
 - Blinking cursor via CSS `@keyframes blink`
 
 **Hero image:** Removed from hero — the terminal window replaces the right column. No profile photo in the hero.
@@ -101,6 +108,23 @@ Kept as its own section, redesigned as a horizontal stats strip:
   - Primary/first tag: `border: 1px solid var(--color-accent)`, `color: var(--color-accent)`
   - Remaining tags: `border: 1px solid var(--color-border)`, `color: var(--color-text-muted)`
 - Hover: `border-color: var(--color-accent)` transition 0.2s
+
+**Updated skill categories from LinkedIn profile:**
+
+| Category | Tags |
+|----------|------|
+| Languages | Kotlin (expert), Java, Swift, Dart, C++ |
+| Android | Jetpack Compose, Room, WorkManager, ViewModel, Coroutines |
+| Cross-Platform | Flutter, KMP (Kotlin Multiplatform), React Native (troubleshooting) |
+| iOS | Swift, UIKit, SwiftUI basics, App Store publishing |
+| Architecture & DI | Clean Architecture, MVVM, MVI, SOLID, Hilt, Dagger 2, Koin |
+| Data Layer | Room, SQLite, DataStore, Firebase RTDB, Firestore |
+| Networking | Retrofit2, OkHttp, WebSockets, REST APIs |
+| Monetization | AdMob, Facebook Audience Network, A/B Testing, eCPM Optimization, IAP |
+| Cloud & Analytics | Firebase, GCP, Google Play Console, App Store Connect |
+| Testing | JUnit, Espresso, UI Automator, LeakCanary |
+| Deployment & Quality | Play Store, App Store, GitHub/GitLab, Gradle, ProGuard/R8, Lint/Detekt |
+| System Design & Leadership | System Design, Tech Leadership, Agile/Scrum, Mentoring, Code Review |
 
 ---
 
@@ -134,10 +158,32 @@ Kept as its own section, redesigned as a horizontal stats strip:
 
 **Experience card:**
 - Current role: `border: 1px solid var(--color-accent)`, `background: linear-gradient(135deg, #0d2818, var(--color-surface))`, "CURRENT" badge top-right (`background: var(--color-accent)`, `color: #000`, small monospace text)
-- Previous roles: `border: 1px solid var(--color-border)`, `background: var(--color-surface)`, 3rd role at 80% opacity
+- Previous roles: `border: 1px solid var(--color-border)`, `background: var(--color-surface)`, oldest role at 80% opacity
 - Role title: `color: var(--color-text)`, 1.4rem, font-weight 600
 - Company + date: `color: var(--color-accent)` for company name, `color: var(--color-text-muted)` for date
 - Bullet points: `▸` character in `var(--color-accent)`, text in `var(--color-text-muted)`, 1.1rem
+
+**Multi-role companies:** OZI Publishing and Facile Solutions each held two consecutive roles. These are grouped under a single company header with sub-role entries indented slightly — no separate dot per sub-role, one dot per company.
+
+**Accurate timeline entries (from LinkedIn, newest first):**
+
+1. **Beyond Apps Group** — Senior Android Developer · Jan 2026–Present · Lahore *(CURRENT)*
+   - Multi-module Android video editor (MyZesty) using MVVM/MVI + Kotlin/Java
+   - Leading end-to-end development of Genie, an AI-powered video maker
+   - Integrating ML features, collaborating with backend teams, conducting code reviews
+
+2. **OZI Publishing** — 1 yr 8 months total · Lahore
+   - Principal Software Engineer · Jun 2025–Jan 2026
+   - Senior Android Developer · Jun 2024–May 2025
+   - 20M+ downloads portfolio; ads SDK with SOLID architecture; mentored Android engineers; 99%+ crash-free rate; monetization strategy (AdMob, FAN)
+
+3. **Jeux Developers** — Senior Android Developer · Jun 2022–May 2024 (2 years) · Sahiwal
+   - Led Android development lifecycle; Kotlin + Java; performance optimization; mentored junior devs; delivered booking & payment flow apps
+
+4. **Facile Solutions** — 2 years total · Sahiwal
+   - Android Developer · Jul 2021–Jun 2022
+   - Junior Android Developer · Jul 2020–Jun 2021
+   - End-to-end app development; Java & Kotlin; collaborated with UI/UX designers; code reviews
 
 ---
 
