@@ -5,9 +5,63 @@
     color: var(--color-primary);
 }
 
-/* Skill category headers */
+/* ============================================
+   SKILLS SECTION
+   ============================================ */
+
+.skills-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.skill-category-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1.6rem;
+  transition: border-color 0.2s ease;
+}
+
+.skill-category-card:hover {
+  border-color: var(--color-accent);
+}
+
 .skill-category-card h3 {
-    color: var(--color-primary);
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+}
+
+.skill-category-desc {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-tags span {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 1.0rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 12px;
+}
+
+/* First tag in each card gets green accent */
+.skill-tags span:first-child {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 /* Timeline dots */
