@@ -625,9 +625,15 @@ a, button, .social-link, .feat-box, .nav-link {
   .project-card:hover {
     transform: translateY(-5px);
   }
-  
+
   .feat-box:hover {
     transform: translateY(-4px) scale(1.01);
   }
+}
+
+/* Terminal cursor blink */
+@keyframes blink {
+  0%, 100% { border-color: var(--color-accent); }
+  50%       { border-color: transparent; }
 }
 
