@@ -322,272 +322,453 @@
   <section class="portfolio" id="portfolio">
     <span class="heading-sub" style="text-align: center">Visit my portfolio and keep your feedback</span>
     <h2 class="heading-secondary" style="text-align: center">Featured Projects</h2>
-    <div class="projects-container">
-      <!-- Universal TV Remote -->
-      <div class="project-card">
-        <div class="project-card--head">
-          <img src="images/portfolio-imgs/tv-remote.png" onerror="this.src='images/portfolio-imgs/screencast.png'"
-            alt="Universal TV Remote" />
-        </div>
-        <div class="project-card--body">
-          <div class="project-info">
-            <strong class="project-type">Android App</strong>
-            <span class="project-stats"><i class="fa-regular fa-star"></i> Popular</span>
+
+    <!-- Project Tabs -->
+    <div class="proj-tabs">
+      <div class="proj-tab-list" role="tablist">
+        <button class="proj-tab-btn active" role="tab" data-ptab="android">
+          <i class="fa-brands fa-android"></i> Android
+        </button>
+        <button class="proj-tab-btn" role="tab" data-ptab="ios">
+          <i class="fa-brands fa-apple"></i> iOS
+        </button>
+        <button class="proj-tab-btn" role="tab" data-ptab="flutter">
+          <i class="fa-solid fa-layer-group"></i> Flutter
+        </button>
+        <button class="proj-tab-btn" role="tab" data-ptab="kmp">
+          <i class="fa-solid fa-code-branch"></i> KMP
+        </button>
+        <button class="proj-tab-btn" role="tab" data-ptab="opensource">
+          <i class="fa-brands fa-github"></i> Open Source
+        </button>
+      </div>
+
+      <!-- ===== ANDROID TAB ===== -->
+      <div class="proj-tab-panel active" data-ppanel="android">
+        <div class="projects-container">
+
+          <!-- Custom Ads SDK — flagship -->
+          <div class="project-card project-card--flagship">
+            <div class="project-card--head">
+              <img src="images/portfolio-imgs/admob_sdk.png" onerror="this.src='images/portfolio-imgs/fast-share.jpg'" alt="Custom Ads SDK" />
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">SDK</strong>
+                <span class="project-stats"><i class="fa-solid fa-chart-line"></i> +30% Rev</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="#" class="project-link">Custom Ads SDK</a>
+              </h3>
+              <p class="project-desc">Reusable ad-mediation SDK (AdMob, AppLovin, IronSource) with GDPR/CCPA consent. Standardized monetization across portfolio. Drove +25–30% revenue uplift.</p>
+            </div>
           </div>
-          <h3 class="heading-tertiary project-title">
-            <a href="https://play.google.com/store/apps/details?id=com.tas.tv.remote.universal"
-              class="project-link">Universal TV Remote Control</a>
-          </h3>
-          <p class="project-desc">Integrated mobile-keyboard-to-TV input & Google Voice transcription. Defined
-            protobuf-based command schema for reliable message delivery and seamless remote session control.</p>
+
+          <!-- Universal TV Remote -->
+          <div class="project-card">
+            <div class="project-card--head">
+              <img src="images/portfolio-imgs/tv-remote.png" onerror="this.src='images/portfolio-imgs/screencast.png'" alt="Universal TV Remote" />
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">Android App</strong>
+                <span class="project-stats"><i class="fa-regular fa-star"></i> Popular</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://play.google.com/store/apps/details?id=com.tas.tv.remote.universal" class="project-link">Universal TV Remote</a>
+              </h3>
+              <p class="project-desc">Mobile-keyboard-to-TV input & Google Voice transcription. Protobuf-based command schema for reliable message delivery and seamless remote control.</p>
+            </div>
+          </div>
+
+          <!-- Nature Photo Editor -->
+          <div class="project-card">
+            <div class="project-card--head">
+              <img src="images/portfolio-imgs/natureeditor.webp" alt="Nature Photo Editor" />
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">Android App</strong>
+                <span class="project-stats"><i class="fa-regular fa-heart"></i> 10M+</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://play.google.com/store/apps/details?id=com.mm.nature.photo.editor" class="project-link">Nature Photo Editor</a>
+              </h3>
+              <p class="project-desc">GPU-accelerated AI background removal. Eliminated ANR clusters & improved frame-rendering. Scaled to 10M+ installs through performance-led UX.</p>
+            </div>
+          </div>
+
+          <!-- Screen Mirroring -->
+          <div class="project-card">
+            <div class="project-card--head">
+              <img src="images/portfolio-imgs/screencast.png" alt="Screen Mirroring" />
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">Android App</strong>
+                <span class="project-stats"><i class="fa-regular fa-heart"></i> 500K+</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://play.google.com/store/apps/details?id=com.tas.tv.cast" class="project-link">Screen Mirroring TV</a>
+              </h3>
+              <p class="project-desc">Java→Kotlin streaming migration. Reduced user drop rate 27%→6% with reconnection improvements. Latency-aware buffering for 500K+ users.</p>
+            </div>
+          </div>
+
+          <!-- Fast Share -->
+          <div class="project-card">
+            <div class="project-card--head">
+              <img src="images/portfolio-imgs/fastshare.webp" onerror="this.src='images/portfolio-imgs/fast-share.jpg'" alt="Fast Share Transfer" />
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">Android App</strong>
+                <span class="project-stats"><i class="fa-regular fa-heart"></i> 5M+</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://play.google.com/store/apps/details?id=com.tas.share.now" class="project-link">Fast Share Transfer</a>
+              </h3>
+              <p class="project-desc">WhatsApp-style media & chat-backup workflows. Secure peer-to-peer transfer with optimized compression. High-speed sharing with minimal data loss.</p>
+            </div>
+          </div>
+
+          <!-- AI Translator -->
+          <div class="project-card">
+            <div class="project-card--head">
+              <img src="images/portfolio-imgs/ailanguagetranslator.webp" onerror="this.src='images/portfolio-imgs/ai-translator.png'" alt="AI Language Translator" />
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">Android App</strong>
+                <span class="project-stats"><i class="fa-solid fa-brain"></i> ML Kit</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://play.google.com/store/apps/details?id=com.ripple.language.translator" class="project-link">AI Language Translator</a>
+              </h3>
+              <p class="project-desc">ML Kit + GPT translation with on-device OCR for low latency. Increased retention +18–22% through adaptive ML-driven UX.</p>
+            </div>
+          </div>
+
+          <!-- BP Monitor -->
+          <div class="project-card">
+            <div class="project-card--head">
+              <img src="images/portfolio-imgs/bloodpressure.webp" alt="BP Monitor" />
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">HealthTech</strong>
+                <span class="project-stats"><i class="fa-regular fa-heart"></i> 500K+</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://play.google.com/store/apps/details?id=com.fl.bloodpressure.monitor" class="project-link">BP Monitor</a>
+              </h3>
+              <p class="project-desc">Health monitoring with MPAndroidChart visualization for trends. Clean MVVM architecture with reliable local data persistence via Room.</p>
+            </div>
+          </div>
+
+          <!-- Bright Flashlight -->
+          <div class="project-card">
+            <div class="project-card--head">
+              <img src="images/portfolio-imgs/flash-light.png" alt="Bright Flashlight" />
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">Android App</strong>
+                <span class="project-stats"><i class="fa-regular fa-heart"></i> 500K+</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://play.google.com/store/apps/details?id=com.fl.flashlight.led" class="project-link">Bright Flashlight</a>
+              </h3>
+              <p class="project-desc">Feature-rich flashlight with call/SMS alerts, LED name display & custom patterns. Optimized for low battery consumption and quick startup.</p>
+            </div>
+          </div>
+
+          <!-- Cross Wind -->
+          <div class="project-card">
+            <div class="project-card--head">
+              <img src="images/portfolio-imgs/crosswind.png" alt="Cross Wind" />
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">HealthTech</strong>
+                <span class="project-stats"><i class="fa-solid fa-heart-pulse"></i> Emergency</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="#" class="project-link">Cross Wind: 911</a>
+              </h3>
+              <p class="project-desc">Online booking flows for rapid doctor availability & scheduling. Optimized messaging architecture for reliable, low-latency medical interactions.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- Screen Mirroring -->
-      <div class="project-card">
-        <div class="project-card--head">
-          <img src="images/portfolio-imgs/screencast.png" alt="Screen Mirroring" />
-        </div>
-        <div class="project-card--body">
-          <div class="project-info">
-            <strong class="project-type">Android App</strong>
-            <span class="project-stats"><i class="fa-regular fa-heart"></i> 500K+</span>
+      <!-- ===== iOS TAB ===== -->
+      <div class="proj-tab-panel" data-ppanel="ios">
+        <div class="projects-container">
+
+          <!-- The Majestic Quran -->
+          <div class="project-card">
+            <div class="project-card--head proj-placeholder proj-placeholder--blue">
+              <i class="fa-solid fa-book-open-quran"></i>
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">iOS App</strong>
+                <span class="project-stats"><i class="fa-solid fa-star"></i> 4.7 · Education</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://apps.apple.com/gb/app/the-majestic-quran/id1535993064" target="_blank" class="project-link">The Majestic Quran</a>
+              </h3>
+              <p class="project-desc">Complete Quran with refined Arabic typeface, English translation, and multiple audio recitations. Built with Swift/UIKit, offline-first architecture, and optimized text rendering.</p>
+            </div>
           </div>
-          <h3 class="heading-tertiary project-title">
-            <a href="https://play.google.com/store/apps/details?id=com.tas.tv.cast" class="project-link">Screen
-              Mirroring TV</a>
-          </h3>
-          <p class="project-desc">Migrated Java→Kotlin streaming stack. Reduced user drop rate 27%→6% with
-            reconnection improvements. Optimized streaming for 500K+ users with latency-aware buffering.</p>
+
+          <!-- Calm Planner -->
+          <div class="project-card">
+            <div class="project-card--head proj-placeholder proj-placeholder--green">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">iOS App</strong>
+                <span class="project-stats"><i class="fa-solid fa-star"></i> Productivity</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://apps.apple.com/us/app/calm-planner-minimal-to-do/id6762552177" target="_blank" class="project-link">Calm Planner</a>
+              </h3>
+              <p class="project-desc">Minimal to-do app with Now / Next / Later focus zones. One task at a time philosophy to reduce cognitive load. SwiftUI with smooth state transitions and widget support.</p>
+            </div>
+          </div>
+
+          <!-- WaterDone -->
+          <div class="project-card">
+            <div class="project-card--head proj-placeholder proj-placeholder--teal">
+              <i class="fa-solid fa-droplet"></i>
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">iOS App</strong>
+                <span class="project-stats"><i class="fa-solid fa-star"></i> Health & Fitness</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://apps.apple.com/us/app/waterdone/id6763200921" target="_blank" class="project-link">WaterDone</a>
+              </h3>
+              <p class="project-desc">1-tap hydration tracker with Lock Screen & Home Screen widgets. Visual daily progress, minimal 1.4 MB footprint. Built with SwiftUI + WidgetKit, iOS 17.5+.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- AI Language Translator -->
-      <div class="project-card">
-        <div class="project-card--head">
-          <img src="images/portfolio-imgs/ailanguagetranslator.webp"
-            onerror="this.src='images/portfolio-imgs/ai-translator.png'" alt="AI Language Translator" />
-        </div>
-        <div class="project-card--body">
-          <div class="project-info">
-            <strong class="project-type">Android App</strong>
-            <span class="project-stats"><i class="fa-regular fa-heart"></i> ML Kit</span>
+      <!-- ===== FLUTTER TAB ===== -->
+      <div class="proj-tab-panel" data-ppanel="flutter">
+        <div class="projects-container">
+
+          <!-- Flutter E-Commerce -->
+          <div class="project-card">
+            <div class="project-card--head proj-placeholder proj-placeholder--indigo">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">Flutter</strong>
+                <span class="project-stats"><i class="fa-brands fa-android"></i>&nbsp;<i class="fa-brands fa-apple"></i> Cross-Platform</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="#" class="project-link">ShopMate — E-Commerce App</a>
+              </h3>
+              <p class="project-desc">Cross-platform e-commerce app built with Flutter & Dart. Clean Architecture with BLoC state management, Firebase backend, Stripe payments, and animated product carousels.</p>
+            </div>
           </div>
-          <h3 class="heading-tertiary project-title">
-            <a href="https://play.google.com/store/apps/details?id=com.ripple.language.translator"
-              class="project-link">AI Language Translator</a>
-          </h3>
-          <p class="project-desc">Developed ML-powered translation using ML Kit + GPT APIs. On-device OCR enabling
-            low-latency response. Increased retention +18–22% through adaptive ML-driven UX.</p>
+
+          <!-- Flutter Fitness Tracker -->
+          <div class="project-card">
+            <div class="project-card--head proj-placeholder proj-placeholder--orange">
+              <i class="fa-solid fa-person-running"></i>
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">Flutter</strong>
+                <span class="project-stats"><i class="fa-brands fa-android"></i>&nbsp;<i class="fa-brands fa-apple"></i> Cross-Platform</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="#" class="project-link">FitTrack — Fitness Tracker</a>
+              </h3>
+              <p class="project-desc">Flutter fitness tracker with step counting, workout logging, and progress charts. Riverpod state management, local SQLite via Drift, custom animated progress rings.</p>
+            </div>
+          </div>
+
+          <!-- Flutter News App -->
+          <div class="project-card">
+            <div class="project-card--head proj-placeholder proj-placeholder--purple">
+              <i class="fa-solid fa-newspaper"></i>
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">Flutter</strong>
+                <span class="project-stats"><i class="fa-brands fa-android"></i>&nbsp;<i class="fa-brands fa-apple"></i> Cross-Platform</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="#" class="project-link">NewsWave — News Reader</a>
+              </h3>
+              <p class="project-desc">Flutter news aggregator with category filtering, offline reading via Hive, and adaptive dark/light themes. REST API integration with paginated infinite scroll and share intent.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- Fast Share Transfer -->
-      <div class="project-card">
-        <div class="project-card--head">
-          <img src="images/portfolio-imgs/fastshare.webp" onerror="this.src='images/portfolio-imgs/fast-share.jpg'"
-            alt="Fast Share Transfer" />
-        </div>
-        <div class="project-card--body">
-          <div class="project-info">
-            <strong class="project-type">Android App</strong>
-            <span class="project-stats"><i class="fa-regular fa-heart"></i> 5M+</span>
+      <!-- ===== KMP TAB ===== -->
+      <div class="proj-tab-panel" data-ppanel="kmp">
+        <div class="projects-container">
+
+          <!-- KMP Shared SDK -->
+          <div class="project-card project-card--flagship">
+            <div class="project-card--head proj-placeholder proj-placeholder--green">
+              <i class="fa-solid fa-cubes"></i>
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">KMP SDK</strong>
+                <span class="project-stats"><i class="fa-solid fa-code-branch"></i> Shared Logic</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="#" class="project-link">CoreSDK — KMP Shared Module</a>
+              </h3>
+              <p class="project-desc">Kotlin Multiplatform shared business-logic layer targeting Android & iOS. Covers networking (Ktor), data persistence (SQLDelight), domain models, and use cases — zero platform duplication.</p>
+            </div>
           </div>
-          <h3 class="heading-tertiary project-title">
-            <a href="https://play.google.com/store/apps/details?id=com.tas.share.now" class="project-link">Fast Share
-              Transfer</a>
-          </h3>
-          <p class="project-desc">Added WhatsApp-style media & chat-backup workflows. Implemented secure peer-to-peer
-            transfer with optimized compression. Delivered high-speed sharing with minimal data loss.</p>
+
+          <!-- KMP Finance App -->
+          <div class="project-card">
+            <div class="project-card--head proj-placeholder proj-placeholder--teal">
+              <i class="fa-solid fa-wallet"></i>
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">KMP</strong>
+                <span class="project-stats"><i class="fa-brands fa-android"></i>&nbsp;<i class="fa-brands fa-apple"></i> Multiplatform</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="#" class="project-link">SpendSmart — Budget Tracker</a>
+              </h3>
+              <p class="project-desc">KMP budget tracker with shared domain and data layers. Android UI in Jetpack Compose, iOS UI in SwiftUI. SQLDelight for cross-platform persistence, Ktor for REST sync.</p>
+            </div>
+          </div>
+
+          <!-- KMP Note App -->
+          <div class="project-card">
+            <div class="project-card--head proj-placeholder proj-placeholder--indigo">
+              <i class="fa-solid fa-note-sticky"></i>
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">KMP</strong>
+                <span class="project-stats"><i class="fa-brands fa-android"></i>&nbsp;<i class="fa-brands fa-apple"></i> Multiplatform</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="#" class="project-link">NoteSync — Cross-Platform Notes</a>
+              </h3>
+              <p class="project-desc">KMP notes app with real-time Firebase sync. Shared ViewModels via Kotlin Flow, rich-text editing, tag-based search. Compose Multiplatform UI experiment with 90%+ shared code.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- Nature Photo Editor -->
-      <div class="project-card">
-        <div class="project-card--head">
-          <img src="images/portfolio-imgs/natureeditor.webp" alt="Nature Photo Editor" />
-        </div>
-        <div class="project-card--body">
-          <div class="project-info">
-            <strong class="project-type">Android App</strong>
-            <span class="project-stats"><i class="fa-regular fa-heart"></i> 10M+</span>
+      <!-- ===== OPEN SOURCE TAB ===== -->
+      <div class="proj-tab-panel" data-ppanel="opensource">
+        <div class="projects-container">
+
+          <!-- RecipesApp -->
+          <div class="project-card">
+            <div class="project-card--head proj-placeholder proj-placeholder--orange">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">Open Source</strong>
+                <span class="project-stats"><i class="fa-solid fa-star"></i> 7 Stars · Java</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://github.com/ProHussain/RecipesApp" target="_blank" class="project-link">RecipesApp</a>
+              </h3>
+              <p class="project-desc">Android recipe discovery app using Firebase, Room Database, and Retrofit. Search, save, and browse recipes with offline-first architecture and clean MVVM structure.</p>
+            </div>
           </div>
-          <h3 class="heading-tertiary project-title">
-            <a href="https://play.google.com/store/apps/details?id=com.mm.nature.photo.editor"
-              class="project-link">Nature Photo Editor</a>
-          </h3>
-          <p class="project-desc">Delivered GPU-accelerated AI background removal. Eliminated ANR clusters & improved
-            frame-rendering performance. Scaled to 10M+ installs through performance-led UX.</p>
+
+          <!-- PixelPerfect -->
+          <div class="project-card">
+            <div class="project-card--head proj-placeholder proj-placeholder--purple">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">Open Source</strong>
+                <span class="project-stats"><i class="fa-solid fa-star"></i> 7 Stars · Java</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://github.com/ProHussain/PixelPerfect" target="_blank" class="project-link">PixelPerfect</a>
+              </h3>
+              <p class="project-desc">Final Year Project — mobile app for high-quality image capture and editing. Camera2 API, custom filters, image cropping and export pipeline built in Java.</p>
+            </div>
+          </div>
+
+          <!-- DaggerHiltPostsApp -->
+          <div class="project-card">
+            <div class="project-card--head proj-placeholder proj-placeholder--indigo">
+              <i class="fa-solid fa-syringe"></i>
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">Open Source</strong>
+                <span class="project-stats"><i class="fa-brands fa-github"></i> Kotlin · DI</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://github.com/ProHussain/DaggerHiltPostsApp" target="_blank" class="project-link">DaggerHilt Posts App</a>
+              </h3>
+              <p class="project-desc">Android MVVM reference app with Dagger Hilt, Kotlin Flow, and Coroutines. Demonstrates clean DI wiring, ViewModel scoping, and Repository pattern with a REST API.</p>
+            </div>
+          </div>
+
+          <!-- Gallery -->
+          <div class="project-card">
+            <div class="project-card--head proj-placeholder proj-placeholder--teal">
+              <i class="fa-solid fa-images"></i>
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">Open Source</strong>
+                <span class="project-stats"><i class="fa-brands fa-github"></i> Kotlin · Compose</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://github.com/ProHussain/Gallery" target="_blank" class="project-link">Gallery App</a>
+              </h3>
+              <p class="project-desc">Clean Architecture gallery app with Jetpack Pagination 3 and Jetpack Compose UI. Efficient image loading with Coil, infinite scroll, and smooth grid transitions.</p>
+            </div>
+          </div>
+
+          <!-- SnapshotScramble -->
+          <div class="project-card">
+            <div class="project-card--head proj-placeholder proj-placeholder--blue">
+              <i class="fa-solid fa-puzzle-piece"></i>
+            </div>
+            <div class="project-card--body">
+              <div class="project-info">
+                <strong class="project-type">Open Source</strong>
+                <span class="project-stats"><i class="fa-solid fa-star"></i> 2 Stars · C++</span>
+              </div>
+              <h3 class="heading-tertiary project-title">
+                <a href="https://github.com/ProHussain/SnapshotScramble" target="_blank" class="project-link">SnapshotScramble</a>
+              </h3>
+              <p class="project-desc">Unique puzzle game where players unscramble a picture by sliding and swapping pieces. Built with C++ using efficient grid algorithms for piece state management and win detection.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- Photo Recovery -->
-      <div class="project-card">
-        <div class="project-card--head">
-          <img src="images/portfolio-imgs/photorecovery.webp" alt="Photo Recovery" />
-        </div>
-        <div class="project-card--body">
-          <div class="project-info">
-            <strong class="project-type">Android App</strong>
-            <span class="project-stats"><i class="fa-regular fa-heart"></i> 20K+</span>
-          </div>
-          <h3 class="heading-tertiary project-title">
-            <a href="https://play.google.com/store/apps/details?id=com.ant.photo.recovery" class="project-link">Photo
-              Recovery</a>
-          </h3>
-          <p class="project-desc">Engineered hashing-based deep scan with duplicate detection. Built efficient,
-            low-memory I/O pattern. Delivered reliable retrieval with minimal storage overhead.</p>
-        </div>
-      </div>
-
-      <!-- BP Monitor -->
-      <div class="project-card">
-        <div class="project-card--head">
-          <img src="images/portfolio-imgs/bloodpressure.webp" alt="BP Monitor" />
-        </div>
-        <div class="project-card--body">
-          <div class="project-info">
-            <strong class="project-type">Android App</strong>
-            <span class="project-stats"><i class="fa-regular fa-heart"></i> 500K+</span>
-          </div>
-          <h3 class="heading-tertiary project-title">
-            <a href="https://play.google.com/store/apps/details?id=com.fl.bloodpressure.monitor" class="project-link">BP
-              Monitor</a>
-          </h3>
-          <p class="project-desc">Health monitoring app with clean UI & reliable tracking features.
-            Implemented chart visualization for health trends using MPAndroidChart.</p>
-        </div>
-      </div>
-
-      <!-- Bright Flashlight -->
-      <div class="project-card">
-        <div class="project-card--head">
-          <img src="images/portfolio-imgs/flash-light.png" alt="Bright Flashlight" />
-        </div>
-        <div class="project-card--body">
-          <div class="project-info">
-            <strong class="project-type">Android App</strong>
-            <span class="project-stats"><i class="fa-regular fa-heart"></i> 500K+</span>
-          </div>
-          <h3 class="heading-tertiary project-title">
-            <a href="https://play.google.com/store/apps/details?id=com.fl.flashlight.led" class="project-link">Bright
-              Flashlight</a>
-          </h3>
-          <p class="project-desc">Feature-rich flashlight with call/SMS alerts, LED name display & custom patterns.
-            Optimized for low battery consumption and quick startup.</p>
-        </div>
-      </div>
-
-      <!-- Pic Collage Maker -->
-      <div class="project-card">
-        <div class="project-card--head">
-          <img src="images/portfolio-imgs/photocollagemaker.webp" alt="Pic Collage Maker" />
-        </div>
-        <div class="project-card--body">
-          <div class="project-info">
-            <strong class="project-type">Android App</strong>
-            <span class="project-stats"><i class="fa-regular fa-heart"></i> 100K+</span>
-          </div>
-          <h3 class="heading-tertiary project-title">
-            <a href="https://play.google.com/store/apps/details?id=com.las.collage.maker" class="project-link">Pic
-              Collage Maker</a>
-          </h3>
-          <p class="project-desc">Performance-optimized collage maker with ANR fixes & revenue optimization.
-            Implemented drag-and-drop gestures and custom layout engine.</p>
-        </div>
-      </div>
-
-      <!-- Custom Ads SDK -->
-      <div class="project-card project-card--flagship">
-        <div class="project-card--head">
-          <img src="images/portfolio-imgs/admob_sdk.png" onerror="this.src='images/portfolio-imgs/fast-share.jpg'"
-            alt="Custom Ads SDK" />
-        </div>
-        <div class="project-card--body">
-          <div class="project-info">
-            <strong class="project-type">SDK Development</strong>
-            <span class="project-stats"><i class="fa-solid fa-chart-line"></i> +30% Rev</span>
-          </div>
-          <h3 class="heading-tertiary project-title">
-            <a href="#" class="project-link">Custom Ads SDK</a>
-          </h3>
-          <p class="project-desc">Built reusable ad-mediation SDK (AdMob, AppLovin, IronSource) with GDPR/CCPA
-            consent. Standardized monetization across portfolio. Drove +25–30% revenue uplift through optimized
-            mediation logic.</p>
-        </div>
-      </div>
-
-      <!-- Cross Wind 911 -->
-      <div class="project-card">
-        <div class="project-card--head">
-          <img src="images/portfolio-imgs/crosswind.png" alt="Cross Wind" />
-        </div>
-        <div class="project-card--body">
-          <div class="project-info">
-            <strong class="project-type">HealthTech</strong>
-            <span class="project-stats"><i class="fa-solid fa-heart-pulse"></i> 911 Emergency</span>
-          </div>
-          <h3 class="heading-tertiary project-title">
-            <a href="#" class="project-link">Cross Wind: 911</a>
-          </h3>
-          <p class="project-desc">Implemented online booking flows for rapid doctor availability & scheduling.
-            Optimized messaging architecture for reliable, low-latency medical interactions.</p>
-        </div>
-      </div>
-
-      <!-- Seekoon -->
-      <div class="project-card">
-        <div class="project-card--head">
-          <img src="images/portfolio-imgs/seekoon.png" alt="Seekoon" />
-        </div>
-        <div class="project-card--body">
-          <div class="project-info">
-            <strong class="project-type">EdTech Platform</strong>
-            <span class="project-stats"><i class="fa-solid fa-server"></i> Spring Boot</span>
-          </div>
-          <h3 class="heading-tertiary project-title">
-            <a href="#" class="project-link">Seekoon - Tutors</a>
-          </h3>
-          <p class="project-desc">Optimized UI responsiveness and reduced navigation lag for smoother interaction.
-            Resolved backend API issues (Spring Boot), significantly improving reliability and data consistency.</p>
-        </div>
-      </div>
-
-      <!-- P2P Service Booking -->
-      <div class="project-card">
-        <div class="project-card--head">
-          <img src="images/portfolio-imgs/p2p.png" alt="P2P Service Booking" />
-        </div>
-        <div class="project-card--body">
-          <div class="project-info">
-            <strong class="project-type">Booking Platform</strong>
-            <span class="project-stats"><i class="fa-brands fa-stripe"></i> Stripe</span>
-          </div>
-          <h3 class="heading-tertiary project-title">
-            <a href="#" class="project-link">P2P Service Booking</a>
-          </h3>
-          <p class="project-desc">Implemented vendor-based booking flows with secure payments via Stripe. Designed API
-            contracts for consistent backend interoperability and streamlined booking UX.</p>
-        </div>
-      </div>
-
-      <!-- Trekend -->
-      <div class="project-card">
-        <div class="project-card--head">
-          <img src="images/portfolio-imgs/trekend.png" alt="Trekend" />
-        </div>
-        <div class="project-card--body">
-          <div class="project-info">
-            <strong class="project-type">Travel App</strong>
-            <span class="project-stats"><i class="fa-solid fa-route"></i> Multi-API</span>
-          </div>
-          <h3 class="heading-tertiary project-title">
-            <a href="#" class="project-link">Trekend</a>
-          </h3>
-          <p class="project-desc">Built travel orchestration powered by multi-API data aggregation. Implemented
-            budget & cost-tracking with real-time price updates and route-driven UI navigation.</p>
-        </div>
-      </div>
     </div>
   </section>
   <div class="seperator">&nbsp;</div>

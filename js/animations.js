@@ -412,3 +412,24 @@ function isInViewport(element) {
   }, { threshold: 0.3 });
   io.observe(hero);
 })();
+
+// ============================================
+// PROJECT TABS
+// ============================================
+(function () {
+  const ptabBtns = document.querySelectorAll('.proj-tab-btn');
+  const ptabPanels = document.querySelectorAll('.proj-tab-panel');
+
+  ptabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.ptab;
+
+      ptabBtns.forEach(b => b.classList.remove('active'));
+      ptabPanels.forEach(p => p.classList.remove('active'));
+
+      btn.classList.add('active');
+      const panel = document.querySelector(`.proj-tab-panel[data-ppanel="${target}"]`);
+      if (panel) panel.classList.add('active');
+    });
+  });
+})();
